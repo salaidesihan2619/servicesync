@@ -1,0 +1,11 @@
+.booking-filters{display:grid;grid-template-columns:minmax(220px,1.6fr) repeat(3,minmax(130px,1fr)) auto;gap:10px;align-items:end;padding:15px;margin:-8px 0 10px;border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:14px}
+.booking-filters label{min-width:0}
+.booking-filters label span{display:block;color:#918ba3;font-size:9px;letter-spacing:.08em;margin:0 0 7px;text-transform:uppercase}
+.booking-filters input,.booking-filters select{width:100%;border:1px solid var(--line);background:rgba(255,255,255,.06);color:#fff;border-radius:9px;padding:10px 11px;outline:none;font-size:11px}
+.booking-filters input:focus,.booking-filters select:focus{border-color:var(--blue);background:rgba(56,189,248,.08)}
+.filter-reset{border:1px solid var(--line);background:transparent;color:#9e98b2;border-radius:9px;padding:10px 12px;font-size:11px}
+.filter-reset:not(:disabled):hover{color:#fff;border-color:rgba(56,189,248,.45);background:rgba(56,189,248,.1)}
+.filter-reset:disabled{opacity:.4;cursor:not-allowed}
+.filter-result{color:#7dd3fc;font-size:10px;margin:9px 0 13px}
+@media(max-width:900px){.booking-filters{grid-template-columns:1fr 1fr}.filter-search{grid-column:1/-1}}
+@media(max-width:640px){.booking-filters{grid-template-columns:1fr;padding:13px}.filter-search{grid-column:auto}.filter-reset{width:100%}}
